@@ -1,5 +1,31 @@
 # Hey there, nice to meet you ;)
 # My name is Tomas and I'm trying to improve my codinf skills by solvong various problems
 
-# My first task you can find [here](https://leetcode.com/problems/two-sum/)
+
+## Task:
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+ 
+
+Example 1:
+
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+Example 2:
+
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+Example 3:
+
+Input: nums = [3,3], target = 6
+Output: [0,1]
+
+
+# You can find task [here](https://leetcode.com/problems/two-sum/)
 # And my solution is [here](https://github.com/TomassVaitkus/solutions/blob/main/sol_1/two_sum.py)
