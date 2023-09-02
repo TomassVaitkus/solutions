@@ -1,32 +1,31 @@
-class PairFinder:
-    def __init__(self, nums):
-        self.nums = nums
-        self.nums.sort()
-    
-    def find_pair_with_sum(self, target):
-        left, right = 0, len(self.nums) - 1
+class Solution:
+    def twoSum(self, nums, target):
+        nums_with_indices = [(num, idx) for idx, num in enumerate(nums)]
+        nums_with_indices.sort(key=lambda x: x[0])
+        
+        left, right = 0, len(nums_with_indices) - 1
         
         while left < right:
-            current_sum = self.nums[left] + self.nums[right]
+            current_sum = nums_with_indices[left][0] + nums_with_indices[right][0]
             if current_sum == target:
-                return (self.nums[left], self.nums[right])
+                return [nums_with_indices[left][1], nums_with_indices[right][1]]
             elif current_sum < target:
                 left += 1
             else:
                 right -= 1
-        return None
+        return []
 
-# Creating a list of numbers
+# Skuriame Solution objektą
+solution = Solution()
+
+# Sukuriame norimą sąrašą skaičių
 numbers = [4, 2, 7, 1, 5, 9]
 
-# Sukurkite PairFinder objektą
-pair_finder = PairFinder(numbers)
-
-# Lets sefine target_sum and his elements indexes:
+# Surandame porą, kurios suma lygi target_sum:
 target_sum = 11
-result = pair_finder.find_pair_with_sum(target_sum)
+result_indices = solution.twoSum(numbers, target_sum)
 
-if result:
-    print([numbers.index(result[0]), numbers.index(result[1])])
+if result_indices:
+    print(result_indices)
 else:
-    print("There's no pair")
+    print("Could not find any pair")

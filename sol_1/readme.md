@@ -1,5 +1,5 @@
 # Hey there, nice to meet you ;)
-# My name is Tomas and I'm trying to improve my codinf skills by solvong various problems
+# My name is Tomas and I'm trying to improve my coding skills by solving various problems
 
 
 ## Task:
